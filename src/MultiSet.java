@@ -8,7 +8,15 @@ public abstract class MultiSet {
      *
      * @param item the item to add
      */
-    abstract void add(Integer item);
-
+    abstract void add(int item);
+    abstract void remove(Integer item);
+    abstract boolean contains(Integer item);
+    abstract boolean isEmpty();
+    abstract int count(Integer item);
+    abstract int size();
     // TODO finish adding abstract methods to fully describe what it means to be a MultiSet.
+
+    public static void main(String[] args) {
+        System.out.println("hi");
+    }
 }
